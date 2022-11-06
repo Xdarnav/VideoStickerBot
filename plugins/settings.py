@@ -1,10 +1,10 @@
 from pyrogram import emoji
 from database import database
-from pyArnavje import Arnavje, Message
+from pystark import Stark, Message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-@Arnavje.cmd('settings', description='Configure personal bot settings.', private_only=True)
+@Stark.cmd('settings', description='Configure personal bot settings.', private_only=True)
 async def settings(_, msg: Message):
     text, markup = await user_settings(msg.from_user.id)
     await msg.react(text, reply_markup=markup)
