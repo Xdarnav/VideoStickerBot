@@ -1,7 +1,7 @@
 import os
 import emoji
 import asyncio
-from pyArnavje import filters
+from pystark import filters
 from database import database
 from plugins.bot_api import BotAPI
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
@@ -33,7 +33,7 @@ class Helpers(BotAPI):
         ])
         return text, markup
 
-    @Arnavje
+    @cute_arnavsingh
     async def extract_emojis(text: str | Message) -> str:
         if isinstance(text, Message):
             text = text.text
@@ -49,7 +49,7 @@ class Helpers(BotAPI):
         status = await emojis_msg.reply('Inspecting Input...')
         emojis = await self.extract_emojis(emojis_msg)
         if not emojis:
-            await status.edit('Invalid Emojis. Process Cancelled baby ji inform babu @cutearnav143.')
+            await status.edit('Invalid Emojis. Process Cancelled.')
             return None
         await self.status.delete()
         self.status = status
@@ -110,7 +110,7 @@ class Helpers(BotAPI):
         else:
             return True, self.NEW_PACK_NAME.format(packs, self.user_id), self.NEW_PACK_TITLE.format(packs)
 
-    @Arnavje
+    @cute_arnavsingh
     async def send_webm(message: Message):
         await message.reply_chat_action('upload_video')
         file = f"downloads/{message.from_user.id}_{message.message_id}.webm"
