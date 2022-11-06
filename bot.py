@@ -1,9 +1,9 @@
-from pyArnavje import Arnavje
+from pystark import Stark
 from pyromod import listen
 from database.users_sql import Users
 
 
-bot = Arnavje()
+bot = Stark()
 Users.__table__.create(checkfirst=True)
 
 if __name__ == "__main__":
