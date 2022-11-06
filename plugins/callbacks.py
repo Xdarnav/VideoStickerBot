@@ -1,4 +1,4 @@
-from pyArnavje import Arnavje
+from pystark import Stark
 from pyrogram import filters
 from database import database
 from plugins.helpers import Helpers
@@ -6,22 +6,22 @@ from pyrogram.types import CallbackQuery
 from plugins.settings import user_settings, default_emojis_settings
 
 
-@Arnavje.callback('emojis')
+@Stark.callback('emojis')
 async def emojis_cb_func(_, query: CallbackQuery):
     await change_bool('ask_emojis', query)
 
 
-@Arnavje.callback('webm')
+@Stark.callback('webm')
 async def webm_cb_func(_, query: CallbackQuery):
     await change_bool('get_webm', query)
 
 
-@Arnavje.callback('kang_mode')
+@Stark.callback('kang_mode')
 async def kang_cb_func(_, query: CallbackQuery):
     await change_bool('kang_mode', query)
 
 
-@Arnavje.callback('default_emojis')
+@Stark.callback('default_emojis')
 async def default_emojis_cb_func(_, query: CallbackQuery):
     user_id = query.from_user.id
     text, markup = await default_emojis_settings(user_id)
@@ -32,8 +32,8 @@ async def default_emojis_cb_func(_, query: CallbackQuery):
         await query.answer('Not Found')
 
 
-@Arnavje.callback('change_default_emojis')
-async def change_default_emojis_cb_func(bot: Arnavje, query: CallbackQuery):
+@Stark.callback('change_default_emojis')
+async def change_default_emojis_cb_func(bot: Stark, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer()
     emojis_msg = await bot.ask(user_id, 'Please send me the emojis', filters=filters.text & filters.incoming)
@@ -47,7 +47,7 @@ async def change_default_emojis_cb_func(bot: Arnavje, query: CallbackQuery):
     await query.message.reply(text, reply_markup=markup)
 
 
-@Arnavje.callback('remove_default_emojis')
+@Stark.callback('remove_default_emojis')
 async def remove_default_emojis_cb_func(_, query: CallbackQuery):
     data = await database.get('users', query.from_user.id, 'default_emojis')
     if data:
@@ -61,7 +61,7 @@ async def remove_default_emojis_cb_func(_, query: CallbackQuery):
 
 # ------------------------------------------------ #
 
-@Arnavje.callback('back')
+@Stark.callback('back')
 async def back_func(_, query: CallbackQuery):
     text, markup = await user_settings(query.from_user.id)
     await query.message.edit(text, reply_markup=markup)
