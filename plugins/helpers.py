@@ -33,7 +33,7 @@ class Helpers(BotAPI):
         ])
         return text, markup
 
-    @cute_arnavsingh
+    @staticmethod
     async def extract_emojis(text: str | Message) -> str:
         if isinstance(text, Message):
             text = text.text
@@ -110,7 +110,7 @@ class Helpers(BotAPI):
         else:
             return True, self.NEW_PACK_NAME.format(packs, self.user_id), self.NEW_PACK_TITLE.format(packs)
 
-    @cute_arnavsingh
+    @staticmethod
     async def send_webm(message: Message):
         await message.reply_chat_action('upload_video')
         file = f"downloads/{message.from_user.id}_{message.message_id}.webm"
