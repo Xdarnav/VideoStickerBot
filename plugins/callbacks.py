@@ -83,7 +83,7 @@ async def change_bool(key, query):
         await query.message.delete()
         return
     if not text:
-        await query.answer('An error occurred. Try a second time, If it persists ask in support chat @link_copied')
+        await query.answer('An error occurred. Try a second time, If it persists ask in support chat')
         return
     await query.edit_message_text(text, reply_markup=markup)
     await query.answer()
