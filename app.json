@@ -1,0 +1,61 @@
+{
+  "name": "Video Sticker Bot",
+  "description": "Telegram bot to convert videos/gifs to video sticker",
+  "logo": "https://telegra.ph/file/cd00fdd3b1c011eb92717.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [
+      {
+        "url": "https://github.com/Xdarnav/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+      {
+         "options": {
+            "version": "12"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+  "repository": "https://github.com/Xdarnav/",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true,
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Obtain a Telegram bot token by contacting @BotFather",
+      "required": true,
+      "value": ""
+    },
+    "LOG_CHAT": {
+      "description": "Telegram Ilex World @link_copied Chat ID for logging",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram ID",
+      "required": false,
+      "value": ""
+    }
+  }
+}
