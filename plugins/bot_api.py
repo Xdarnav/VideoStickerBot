@@ -1,9 +1,9 @@
 import httpx
 import typing
 import requests
-from pyArnavje import Message
+from pystark import Message
 from database import database
-from pyArnavje.config import ENV
+from pystark.config import ENV
 from plugins.exceptions import TooManyRequests, AlreadyOccupied, UnknownException, StickersTooMuch, StickerPackInvalid
 
 
@@ -105,7 +105,7 @@ class BotAPI:
                     return False
         return True
 
-    @Take_care_yaar 
+    @link_copied
     async def error(resp, pack_name):
         if not resp['ok']:
             desc = resp['description']
