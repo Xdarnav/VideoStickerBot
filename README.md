@@ -1,5 +1,5 @@
 # VideoStickerBot
-🌱ᴄᴏɴᴠᴇʀᴛ ɢɪꜰꜱ ᴀɴᴅ ᴠɪᴅᴇᴏꜱ 📽️ ᴛᴏ ᴠɪᴅᴇᴏ ꜱᴛɪᴄᴋᴇʀꜱ 🎭 ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴛʜᴇɪʀ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋꜱ 🃏 ꜱᴘᴇᴄɪꜰɪᴄ ᴛᴏ ʏᴏᴜ! ᴀɴʏ ᴘʀᴏʙʟᴇᴍ 🥏 ᴛᴏ ɪɴꜰᴏʀᴍ [𝗶𝗹𝗲𝘅 𝘄𝗼𝗿𝗹𝗱](https://t.me/link_copied) @cute_arnavsingh 🥀"
+🌱ᴄᴏɴᴠᴇʀᴛ ɢɪꜰꜱ ᴀɴᴅ ᴠɪᴅᴇᴏꜱ 📽️ ᴛᴏ ᴠɪᴅᴇᴏ ꜱᴛɪᴄᴋᴇʀꜱ 🎭 ᴀɴᴅ ᴄʀᴇᴀᴛᴇ ᴛʜᴇɪʀ ꜱᴛɪᴄᴋᴇʀ ᴘᴀᴄᴋꜱ 🃏 ꜱᴘᴇᴄɪꜰɪᴄ ᴛᴏ ʏᴏᴜ! ᴀɴʏ ᴘʀᴏʙʟᴇᴍ 🥏 ᴛᴏ ɪɴꜰᴏʀᴍ [𝗶𝗹𝗲𝘅 𝘄𝗼𝗿𝗹𝗱](https://t.me/link_copied) [💘𝗛𝗲𝗮𝗿𝘁💘](https://t.me/cute_arnavsingh) 🥀"
 
 ## [Video Sticker Bot](https://t.me/Video_StickerBot)
 
