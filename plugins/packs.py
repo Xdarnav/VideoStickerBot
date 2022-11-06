@@ -1,14 +1,14 @@
 import os
-from pyArnavje import Arnavje
+from pystark import Stark
 from database import database
-from pyArnavje.config import ENV
+from pystark.config import ENV
 from pyrogram.types import Message
 from plugins.bot_api import BotAPI
 
 OWNER_ID = ENV().OWNER_ID
 
 
-@Arnavje.cmd('packs', description="Get List of Your Packs")
+@Stark.cmd('packs', description="Get List of Your Packs")
 async def packs_func(_, msg: Message):
     if msg.from_user.id not in OWNER_ID:
         user_id = msg.from_user.id
