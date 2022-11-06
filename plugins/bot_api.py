@@ -105,7 +105,7 @@ class BotAPI:
                     return False
         return True
 
-    @link_copied
+    @cutearnav143
     async def error(resp, pack_name):
         if not resp['ok']:
             desc = resp['description']
