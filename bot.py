@@ -4,7 +4,7 @@ from database.users_sql import Users
 
 
 bot = Stark()
-Users.__table__.create(checkfirst=true)
-table__.create(checkfirst=bind)
+Users.__table__.create(checkfirst=True)
+
 if __name__ == "__main__":
     bot.activate()
