@@ -19,7 +19,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   },
   "addons": [
@@ -50,12 +50,12 @@
     "LOG_CHAT": {
       "description": "Telegram Ilex World @link_copied Chat ID for logging",
       "required": true,
-      "value": ""
+      "value": "-1001733900890"
     },
     "OWNER_ID": {
       "description": "Your Telegram ID",
       "required": false,
-      "value": ""
+      "value": "5482561033"
     }
   }
 }
